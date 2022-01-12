@@ -1,6 +1,6 @@
 # Hello world
 
-Hello world project for massa's smart contracts development. This preset environment can be used to test and debug locally your smart contracts before sending it to the [massa network](https://github.com/massalabs/massa).
+Hello world project for massa's smart contracts development. This preset environment can be used to test and debug locally your smart contract before sending it to the [massa network](https://github.com/massalabs/massa).
 
 ## Init
 
