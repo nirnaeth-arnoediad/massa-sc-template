@@ -13,7 +13,7 @@ Once this repository is cloned, run the following command in the cloned director
 yarn install
 ```
 
-> You can be sur to load the same versions as developers did with the `--frozen-lockfile` flag, or `--immutable` if you use yarn2
+> You can be sure to load the same versions as developers did with the `--frozen-lockfile` flag, or `--immutable` if you use yarn2
 
 ## Scripts
 
