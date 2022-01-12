@@ -1,0 +1,28 @@
+{
+  "name": "massa-sc-boilerplate",
+  "version": "1.0.0",
+  "description": "Init a massa smart contract development project",
+  "license": "MIT",
+
+  "scripts": {
+    "helloworld": "asc src/helloworld.ts --target release --exportRuntime --binaryFile build/helloworld.wasm",
+    
+    "replaceIncludes": "node bin/include_base64.js src/createSC.ts",    
+    "buildSC": "asc src/createSC.m.ts --target release --exportRuntime --binaryFile build/createSC.wasm",
+    "cleanSC": "rm src/createSC.m.ts",
+    "createSC": "yarn run replaceIncludes && yarn run buildSC && yarn run cleanSC",
+
+    "buildAll": "yarn run helloworld && yarn run createSC",
+    "exec": "yarn run buildAll && ./bin/massa-sc-test ./build/createSC.wasm",
+
+    "buildTest": "asc src/mytest.ts --target release --exportRuntime --binaryFile build/mytest.wasm",
+    "execTest": "yarn run buildTest && ./bin/massa-sc-test ./build/mytest.wasm",
+
+    "clean": "rm -rf build && rm assembly/*.m.ts && rm ledger.json"
+  },
+  "dependencies": {
+    "assemblyscript": "^0.19.20",
+    "json-as": "^0.2.6",
+    "visitor-as": "^0.6.0"
+  }
+}
