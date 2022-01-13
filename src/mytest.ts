@@ -7,7 +7,7 @@
 import { call, print } from "./massa";
  
 export function main(_args: string): string {
-    const addr = "FcRuD46Ib1A="; // Replace the address 
+    const addr = "0usKj02ic+A="; // Replace the address 
     const func = "helloworld"; // Replace the function
     const args = "Adrien!"; // Replace the arguments if you want
     print(call(addr, func, args));
