@@ -3,7 +3,7 @@
  * smartcontract.
  **/
 
-import { create_sc, include_base64, print, call, get_call_stack } from "./massa";
+import { create_sc, include_base64, print, call, get_call_stack } from "massa-sc-std";
 import { JSON } from 'json-as';
 
 export function main(_args: string): i32 {

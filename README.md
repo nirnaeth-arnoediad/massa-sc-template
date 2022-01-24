@@ -22,16 +22,12 @@ You can run scripts described in the package.json with `yarn run {script_name}`,
 I'll describe the differents embeded scripts in this section and redirect to severals documentations if needed.
 
 - **helloworld**: generate a .wasm file in a `build/` directory `src/helloworld.ts`. This is the helloworld smart contract example. If you look at this command line, you can see that we use the asc binary, this is the AssemblyScript compiler. Here is [the documentation](https://www.assemblyscript.org/introduction.html) if you want to know more.
-
 - **replaceIncludes**: generate a `src/createSC.m.ts`. We want to replace the `include_base64('path.wasm')` with the real binary contained in `path.wasm` before compiling createSC.
 - **buildSC**: compile `src/createSC.m.ts`
 - **cleanSC**: remove temp file `src/createSC.m.ts`
 - **createSC**: run **replaceIncludes**, **buildSC** and **cleanSC**
-
 - **buildAll**: run **helloworld** and **createSC**
-
 - **exec**: run **buildAll** and then execute the smart contract on a mock with the `massa-sc-test` binary. Look at the mock repository [here](https://github.com/massalabs/massa-sc-tester) for more informations about mocking the network.
-
 - **buildTest**: Build mytest.ts
 - **execTest**: Exec in the mocked network mytest.wasm
 
@@ -39,12 +35,11 @@ I'll describe the differents embeded scripts in this section and redirect to sev
 
 Once you ran the **exec** script, you should see a new file in the directory named `ledger.json`. This file represent the local state of the ledger for your test. You can modify it manually (obviously, carrefully) to look at the state of the ledger after each execution.
 
->This mock doesn't manage like the real massa network backups when an execution failed for the moment. If you want to keep immutable the ledger make a copy before locally.
+> This mock doesn't manage like the real massa network backups when an execution failed for the moment. If you want to keep immutable the ledger make a copy before locally.
 
 ## Report an issue
 
 If you get an issue whith `massa-sc-test` we would appreciate a report on the [dedicated repository](https://github.com/massalabs/massa-sc-tester/issues/new/choose). Use an appropriate language and explain step by step your problem with examples and screenshots.
-
 
 ---
 

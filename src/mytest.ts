@@ -4,7 +4,7 @@
  * Once you ran the command `yarn run-sc 
  **/
 
-import { call, print } from "./massa";
+import { call, print } from "massa-sc-std";
  
 export function main(_args: string): string {
     const addr = "FcRuD46Ib1A="; // Replace the address 
