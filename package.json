@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Init a massa smart contract development project",
   "repository": "https://github.com/massalabs/massa-sc-template",
-  "author": "Adrien Zinger <zinger.ad@gmail.com>, Yvan Sraka <yvan@sraka.xyz>",
+  "author": "Massa Labs <info@massa.net>",
   "license": "MIT",
   "private": false,
   "scripts": {
