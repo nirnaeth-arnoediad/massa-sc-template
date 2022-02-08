@@ -10,11 +10,12 @@ You need `node`, `yarn` and `npx` to initialize the project!
 npx massa-sc-create hello-world
 ```
 
-> N.B. if you didn't initialize this project with `npx`, you can clone and customize manually this repository:
+> N.B. if you didn't initialize this project with `npx`, you can clone and customize manually this repository with the command bellow. You'll be able to change the version of `massa-sc-std` if it's not already at the latest version.
 > 
 > ```shell
 > git clone https://github.com/massalabs/massa-sc-template
 > ```
+
 
 Once this repository is cloned, run the following command in the freshly created directory:
 
@@ -44,7 +45,7 @@ I'll describe the different embedded scripts in this section and redirect to sev
 
 Once you ran the `exec` script, you should see a new file in the directory named `ledger.json`. This file represent the local state of the ledger for your test. You can modify it manually (obviously, carefully) to look at the state of the ledger after each execution.
 
-> This mock doesn't manage like the real massa network backups when an execution failed for the moment. If you want to keep immutable the ledger make a copy before locally.
+> This mock doesn't manage like the real massa network backups when an execution failed for the moment. The ledger file is modified each time you run a code that write inside without backup management. That signifcate that even if your code failed after writing in the ledger, the modifications are saved.
 
 ## Report an issue
 
