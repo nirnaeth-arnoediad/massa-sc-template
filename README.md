@@ -43,11 +43,11 @@ I'll describe the different embedded scripts in this section and redirect to sev
 
 ## Mocked ledger
 
-For testing your smart contract, [download](https://github.com/massalabs/massa-sc-tester/releases) the `massa-sc-tester` release that correspond to your environment. Unzip the downloaded file and put the executable in `./bin`. Make sur you have the right accesses with `chmod`. Finally, the commands `exec` and `execTest` should works correctly.
+To test your smart contracts locally, [download](https://github.com/massalabs/massa-sc-tester/releases) the `massa-sc-tester` release that corresponds to your environment. Unzip the downloaded file and put the executable in `./bin` directory. Make sure that the right access permissions are set with `chmod`. If everything is setup correctly the commands `exec` and `execTest` should work.
 
 Once you ran the `exec` script, you should see a new file in the directory named `ledger.json`. This file represent the local state of the ledger for your test. You can modify it manually (obviously, carefully) to look at the state of the ledger after each execution.
 
-> This mock doesn't manage like the real massa network backups when an execution failed for the moment. The ledger file is modified each time you run a code that write inside without backup management. That signifcate that even if your code failed after writing in the ledger, the modifications are saved.
+> For now, the execution on the mocked ledger doesn't behave exactly like on the real massa network, in particular if the execution of a smart-contract fails. The ledger file is modified each time you run a code that writes on the ledger file and there is no backup management. It means that even if your code failed after writing in the ledger, the modifications are saved while the execution would be reverted on the real massa network.
 
 ## Report an issue
 
