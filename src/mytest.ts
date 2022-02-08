@@ -10,6 +10,6 @@ export function main(_args: string): string {
     const addr = "FcRuD46Ib1A="; // Replace the address 
     const func = "helloworld"; // Replace the function
     const args = "Adrien!"; // Replace the arguments if you want
-    print(call(addr, func, args));
+    print(call(addr, func, args, 0));
     return "0"
 }
