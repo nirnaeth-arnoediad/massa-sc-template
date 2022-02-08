@@ -43,10 +43,10 @@ long@^5.2.0:
   resolved "https://registry.yarnpkg.com/long/-/long-5.2.0.tgz#2696dadf4b4da2ce3f6f6b89186085d94d52fd61"
   integrity sha512-9RTUNjK60eJbx3uz+TEGF7fUr29ZDxR5QzXcyDpeSfeH28S9ycINflOgOlppit5U+4kNTe83KQnMEerw7GmE8w==
 
-massa-sc-std@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/massa-sc-std/-/massa-sc-std-1.0.0.tgz#7e86552c2af2725a6f7cdb450b470ab39868e2a0"
-  integrity sha512-iVpm9tBjAdFI7GkQmTSAS+C+vmZ3PyrwKT/HzobO85fTyTKLmBJSqaPfvoh6FpUVqapOuaiOWA+WiwN0EvYV/A==
+massa-sc-std@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/massa-sc-std/-/massa-sc-std-2.0.0.tgz#7c75e3c04295deae4f80383c1d73c0ac45bf58f9"
+  integrity sha512-gpMX4iGWAzI6PTpb/wGYH3RN+q585o3ixFuaHnD7VuL2amqFlFW44RwZESPPVBcq+nBWypJxz2pt6hxOA/gjLQ==
 
 source-map-support@^0.5.20:
   version "0.5.21"
