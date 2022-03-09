@@ -4,23 +4,16 @@
   "description": "Init a massa smart contract development project",
   "repository": "https://github.com/massalabs/massa-sc-template",
   "author": "Massa Labs <info@massa.net>",
-  "license": "MIT",
   "private": false,
   "scripts": {
-    "helloworld": "asc src/helloworld.ts --target release --exportRuntime --binaryFile build/helloworld.wasm",
-    "replaceIncludes": "node bin/include_base64.js src/createSC.ts",
-    "buildSC": "asc src/createSC.m.ts --target release --exportRuntime --binaryFile build/createSC.wasm",
-    "cleanSC": "rm src/createSC.m.ts",
-    "createSC": "yarn run replaceIncludes && yarn run buildSC && yarn run cleanSC",
-    "buildAll": "yarn run helloworld && yarn run createSC",
-    "exec": "yarn run buildAll && ./bin/massa-sc-test ./build/createSC.wasm",
-    "buildTest": "asc src/mytest.ts --target release --exportRuntime --binaryFile build/mytest.wasm",
-    "execTest": "yarn run buildTest && ./bin/massa-sc-test ./build/mytest.wasm",
-    "clean": "rm -rf build && rm assembly/*.m.ts && rm ledger.json"
+    "build": "massa-sc-scripts build",
+    "bundle": "massa-sc-scripts bundle",
+    "clean": "massa-sc-scripts clean"
   },
   "dependencies": {
     "assemblyscript": "^0.19.20",
     "json-as": "^0.2.6",
+    "massa-sc-scripts": "3.0.0",
     "massa-sc-std": "2.0.0",
     "visitor-as": "^0.6.0"
   }
