@@ -8,9 +8,6 @@
   "private": false,
   "scripts": {
     "helloworld": "asc src/helloworld.ts --target release --exportRuntime --binaryFile build/helloworld.wasm",
-    "receiveMessage": "asc src/receivemessage.ts --target release --exportRuntime --binaryFile build/receivemessage.wasm",
-    "replaceSendIncludes": "node bin/include_base64.js src/sendmessage.ts",
-    "sendMessage": "yarn run receiveMessage && yarn run replaceSendIncludes && asc src/sendmessage.m.ts --target release --exportRuntime --binaryFile build/sendmessage.wasm",
     "replaceIncludes": "node bin/include_base64.js src/createSC.ts",
     "buildSC": "asc src/createSC.m.ts --target release --exportRuntime --binaryFile build/createSC.wasm",
     "cleanSC": "rm src/createSC.m.ts",
@@ -19,6 +16,8 @@
     "exec": "yarn run buildAll && ./bin/massa-sc-test ./build/createSC.wasm",
     "buildTest": "asc src/mytest.ts --target release --exportRuntime --binaryFile build/mytest.wasm",
     "execTest": "yarn run buildTest && ./bin/massa-sc-test ./build/mytest.wasm",
+    "receiveMessage": "asc src/receivemessage.ts --target release --exportRuntime --binaryFile build/receivemessage.wasm",
+    "sendMessage": "yarn run receiveMessage && node bin/include_base64.js src/sendmessage.ts && asc src/sendmessage.m.ts --target release --exportRuntime --binaryFile build/sendmessage.wasm && rm src/sendmessage.m.ts",
     "clean": "rm -rf build && rm assembly/*.m.ts && rm ledger.json"
   },
   "dependencies": {
