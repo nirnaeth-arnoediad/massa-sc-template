@@ -4,7 +4,7 @@ Hello world project for Massa's smart contracts development. This preset environ
 
 ## Quick setup 🧰
 
-You need `node`, `yarn` and `npx` to initialize the project!
+You need `node`, `npm` and `npx` to initialize the project!
 
 ```shell
 npx massa-sc-create hello-world
@@ -19,10 +19,8 @@ npx massa-sc-create hello-world
 Once this repository is cloned, run the following command in the freshly created directory:
 
 ```shell
-yarn install
+npm install
 ```
-
-> You can be sure to load the same versions as developers did with the `--frozen-lockfile` flag, or `--immutable` if you use `yarn2`
 
 ## Usage ✍️
 
