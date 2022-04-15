@@ -16,5 +16,5 @@ export function main(_args: string): void {
     print("Address = " + addr);
     // Here example of how to call a smart contract
     print(call(addr, "helloworld", "World", 0));
-    print(`${JSON.parse<string[]>(Context.get_call_stack())[0]}`)
+    print(`${Context.get_call_stack()[0]}`)
 }
