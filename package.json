@@ -13,7 +13,7 @@
   "dependencies": {
     "assemblyscript": "^0.19.20",
     "json-as": "^0.2.6",
-    "massa-sc-scripts": "3.0.0",
+    "massa-sc-scripts": "^3.1.0",
     "massa-sc-std": "3.0.0",
     "visitor-as": "^0.6.0"
   }
