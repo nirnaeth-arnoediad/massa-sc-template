@@ -6,15 +6,14 @@
   "author": "Massa Labs <info@massa.net>",
   "private": false,
   "scripts": {
-    "build": "massa-sc-scripts build",
-    "bundle": "massa-sc-scripts bundle",
+    "build": "massa-sc-scripts build-sc && massa-sc-scripts build-sc src/main.ts build/main.wasm",
     "clean": "massa-sc-scripts clean"
   },
   "dependencies": {
     "assemblyscript": "^0.19.20",
     "json-as": "^0.2.6",
-    "massa-sc-scripts": "^3.1.0",
-    "massa-sc-std": "3.0.1",
+    "massa-sc-scripts": "4.0.1",
+    "massa-sc-std": "3.0.2",
     "visitor-as": "^0.6.0"
   }
 }
