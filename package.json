@@ -13,7 +13,7 @@
     "assemblyscript": "^0.19.20",
     "json-as": "^0.2.6",
     "massa-sc-scripts": "4.0.1",
-    "massa-sc-std": "3.0.2",
+    "massa-sc-std": "3.1.2",
     "visitor-as": "^0.6.0"
   }
 }
